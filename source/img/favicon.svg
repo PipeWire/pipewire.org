@@ -14,7 +14,10 @@
    id="animatedlogo"
    version="1.1"
    inkscape:version="0.92+devel unknown"
-   sodipodi:docname="favicon.svg">
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/jimmac/public_html/pipewire/source/img/favicon152.png"
+   inkscape:export-xdpi="912"
+   inkscape:export-ydpi="912">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,9 +31,9 @@
      inkscape:window-height="1376"
      id="namedview13472"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="8.1705635"
-     inkscape:cy="7.5230993"
+     inkscape:zoom="11.313708"
+     inkscape:cx="9.6128379"
+     inkscape:cy="26.147411"
      inkscape:window-x="1720"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
@@ -121,35 +124,74 @@
      id="g1437"
      transform="matrix(7.8919688e-4,0,0,7.8919688e-4,83.847735,-217.61343)"
      style="opacity:1">
-    <circle
-       r="1900.8033"
-       cy="279537.84"
-       cx="-103697.19"
-       id="circle1255-3"
-       style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none" />
-    <path
-       sodipodi:nodetypes="ccc"
-       inkscape:connector-curvature="0"
-       id="path1267-5"
-       d="m -103727.56,281379.15 v 11269.24 l 8110.218,-4453.83"
-       style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:2534.22192383;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" />
-    <path
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path1269-4"
-       d="m -96109.133,281199.44 v 11341.39 l 7604.304,-4261.11 v -6964.51"
-       style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:2534.22192383;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" />
-    <circle
-       style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle896"
-       cx="-96011.672"
-       cy="279537.84"
-       r="1900.8033" />
-    <circle
-       r="1900.8033"
-       cy="279537.84"
-       cx="-88423.75"
-       id="circle898"
-       style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none" />
+    <g
+       id="g928"
+       transform="translate(0,633.55547)"
+       style="stroke:#000000;opacity:0.3">
+      <circle
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#000000;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle1255-3"
+         cx="-103697.19"
+         cy="279537.84"
+         r="1900.8033" />
+      <path
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#000000;stroke-width:2534.22192383;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m -103727.56,281379.15 v 11269.24 l 8110.218,-4453.83"
+         id="path1267-5"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#000000;stroke-width:2534.22192383;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m -96109.133,281199.44 v 11341.39 l 7604.304,-4261.11 v -6964.51"
+         id="path1269-4"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+      <circle
+         r="1900.8033"
+         cy="279537.84"
+         cx="-96011.672"
+         id="circle896"
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#000000;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none" />
+      <circle
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#000000;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle898"
+         cx="-88423.75"
+         cy="279537.84"
+         r="1900.8033" />
+    </g>
+    <g
+       id="g940"
+       transform="translate(0,-633.55553)">
+      <circle
+         r="1900.8033"
+         cy="279537.84"
+         cx="-103697.19"
+         id="circle930"
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path932"
+         d="m -103727.56,281379.15 v 11269.24 l 8110.218,-4453.83"
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:2534.22192383;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path934"
+         d="m -96109.133,281199.44 v 11341.39 l 7604.304,-4261.11 v -6964.51"
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:2534.22192383;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" />
+      <circle
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle936"
+         cx="-96011.672"
+         cy="279537.84"
+         r="1900.8033" />
+      <circle
+         r="1900.8033"
+         cy="279537.84"
+         cx="-88423.75"
+         id="circle938"
+         style="color:#000000;overflow:visible;vector-effect:none;fill:none;stroke:#ffffff;stroke-width:1249.86877441;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
   </g>
 </svg>
