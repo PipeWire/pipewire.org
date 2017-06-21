@@ -27,7 +27,7 @@ body {
 
 hr {
   max-width: 50px;
-  border-color: #f05f40;
+  border-color: $key_color;
   border-width: 3px;
 }
 
@@ -204,7 +204,7 @@ header {
   width: 100%;
   min-height: auto;
   text-align: center;
-  color: $key_color;
+  color: #fff;
   background-color: $key_color;
   background-image: url(/img/bg.jpg);
   background-size: cover;
@@ -234,7 +234,7 @@ header .header-content .header-content-inner p {
   margin-bottom: 50px;
   font-size: 16px;
   font-weight: 300;
-  color: #000;
+  color: #fff;
 }
 
 pre {

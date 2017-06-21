@@ -1,6 +1,6 @@
 ---
-title: Fleet Commander
-description: Manage your large GNOME deployments with ese.
+title: PipeWire
+description: Zero latency audio access
 ---
 %header
   .header-content
@@ -11,44 +11,36 @@ description: Manage your large GNOME deployments with ese.
         :css
           #foo {}
     .header-content-inner
-      %h1 manage your large deployments with ease
+      %h1
+        = current_page.data.description
       %hr
-        %p Easily clone a template of a machine across your whole network and keep it up to date.
+        %p Sandboxed, non-locking, zero latency audio device access.
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out How
         
 %section#about.bg-primary
   .container
     .row
-      .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Fleet Commander is a toolchain for defining and deploying a common OS base
-        %hr.light
-    .row
       .col-lg-12.text-center
         =partial "workflow.svg"
 
-        %p.text-faded By using a virtual machine, the admin can fine tune an image of the OS in real time and get an overview of the changes he made at the end of the process. After a review, those changes can be pushed to the common profile.
+        %p.text-faded 
+          With PipeWire you can capture a playback audio with minimal latency, process in realtime using multi-process architecture. Support for sandboxed application model of the future. See 
+          = link_to "Flatpak", "http://flatpak.org" 
+          for more info.
         %p &nbsp;
 
 %section#getting
   .container
     .row
       .col-lg-10.col-lg-offset-1
-        %h1.section-heading.text-center Getting Fleet Commander
+        %h1.section-heading.text-center Getting PipeWire
         %hr.primary
         %p
-          Fleet Commander consists on two components:
-
-        %ul
-          %li a web service integrated with Apache that serves the dynamic application and the profile data to the network.
-          %li  and a client side daemon that runs on every host of the network.
-        %p
-          Fleet Commander relies on libvirt and KVM to generate the profile data
-          dinamically from a template VM running the same environment as the rest of the
-          network.
+          FIXME: How to get pipewire
 
         %h2 Setup
         %p
-          These are the instructions to build and install the admin interface:
+          FIXME: How to get it going.
         
         
         :preserve
@@ -58,45 +50,6 @@ description: Manage your large GNOME deployments with ese.
             <span class="unselectable">$ </span>make install
           </pre>
         
-        %p
-          You must also create a fleet-commander-admin user and grant it privileges to
-          %code /var/lib/fleet-commander-admin 
-          and 
-          %code /var/lib/fleet-commander-admin/profiles
-        %p
-          These are the instructions to install the logger and enable a VM as a Fleet Commander template:
-
-        :preserve
-          <pre>
-            <span class="unselectable">$ </span>./configure --prefix=/usr
-            <span class="unselectable">$ </span>make
-            <span class="unselectable">$ </span>cd logger
-            <span class="unselectable">$ </span>make install
-            <span class="unselectable">$ </span>cd ../data/
-            <span class="unselectable">$ </span>make install
-          </pre>
-        %p
-          The install prefix must be set to /usr so that the fleet-commander-logger.desktop file makes it
-          to the /etc/xdg/autostart directory.
-        
-        %h2 Note on the Logger
-        %p
-          The logger autostarts on a desktop session only when a special device shows up in 
-          %code /dev/virtio-ports
-        %h2 Running the Admin Interface
-        %p
-          You must first enable the apache configuration, in Fedora systems you must do
-          the following as root (assuming you installed it in 
-          = succeed "):" do
-            %code --prefix=/usr
-        :preserve
-          <pre>
-            <span class="unselectable">$ </span>ln -s /etc/xdg/fleet-commander-apache.conf /etc/httpd/conf.d
-            <span class="unselectable">$ </span>systemctl restart httpd
-          </pre>
-        %p
-          And the service must be available as a virtual host in apache, point your
-          browser to it and follow the instructions.
 
 %section#get-involved
   .container
@@ -105,15 +58,15 @@ description: Manage your large GNOME deployments with ese.
         %h1.section-heading.text-center Get Involved
         %hr.primary
         %p
-          Fleet Commander is Free Software and is developed in the open. To get in touch, use the 
-          =link_to "fleet commander mailing list", "http://fixme.com"
+          PipeWire is Free Software and is developed in the open. To get in touch, use the 
+          =link_to "pipewire mailing list", "http://fixme.com"
           or 
-          %em #fleetcommander
+          %em #pipewire
           IRC channel on Freenode. Code can be found on
-          =link_to "Github", "https://github.com/fleet-commander"
+          =link_to "Github", "https://github.com/pipewire"
           (along with a 
           = succeed ")" do
-            = link_to "wiki", "https://wiki.gnome.org/Projects/FleetCommander"
+            = link_to "wiki", "https://wiki.gnome.org/Projects/pipewire"
           and issues are tracked on 
           = succeed "." do
-            = link_to "Github Issues", "https://github.com/fleet-commander/fc-admin/issues"
+            = link_to "Github Issues", "https://github.com/pipewire/fc-admin/issues"
