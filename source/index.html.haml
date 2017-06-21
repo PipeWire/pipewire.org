@@ -9,13 +9,38 @@ description: PipeWire — Zero latency multimedia
       .col-lg-6.col-lg-offset-3.text-center
         =partial "animated-logo.svg"
         :css
-          #foo {}
+          #pwlogo {
+            fill: rgba(255,255,255,0.6) !important;
+            transform: scale(1);
+            transition: all 1s;
+          }
+          #pwlogo:hover {
+            fill: #fff !important;
+            transform: scale(1.1);
+          }
+          #konamiglow {
+            transform: scale(0);
+            animation-name: konami;
+            animation-delay: 1000ms;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+          }
+
+          @keyframes konami {
+            0% {transform: scale(1);}
+            100% { transform: scale(20);}
+          }
+          
     .header-content-inner
       %h1
         = current_page.data.description
       %hr
         %p Sandboxed, non-locking, zero latency audio &amp; video access and processing.
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
+  =partial "pcb.svg"
         
 %section#about.bg-primary
   .container
