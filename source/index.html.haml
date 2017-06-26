@@ -1,6 +1,6 @@
 ---
 title: PipeWire
-description: PipeWire — Zero latency multimedia
+description: PipeWire — low latency multimedia
 ---
 %header
   .header-content
@@ -39,7 +39,7 @@ description: PipeWire — Zero latency multimedia
       %h1
         = current_page.data.description
       %hr
-        %p Sandboxed, non-locking, zero latency audio &amp; video access and processing.
+        %p Sandboxed, non-locking, low latency audio & video access and processing.
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
   =partial "pcb.svg"
         
@@ -62,20 +62,34 @@ description: PipeWire — Zero latency multimedia
         %h1.section-heading.text-center Getting PipeWire
         %hr.primary
         %p
-          FIXME: How to get pipewire
+          Pipewire is available on 
+          = succeed "." do
+            = link_to "github", "https://github.com/wtay/pipewire"
+          To clone the repository, just
+
+        :preserve
+          <pre>
+            <span class="unselectable">$ </span>git clone https://github.com/wtay/pipewire.git
+          </pre>
 
         %h2 Setup
         %p
-          FIXME: How to get it going.
+          Building pipewire is fairly straightforward.
         
         
         :preserve
           <pre>
-            <span class="unselectable">$ </span>./configure --prefix=$PREFIX # where $PREFIX can be /usr or /usr/local
+            <span class="unselectable">$ </span>./autogen.sh --prefix=$PREFIX
             <span class="unselectable">$ </span>make
             <span class="unselectable">$ </span>make install
           </pre>
         
+        The 
+        %code $PREFIX
+        is commonly set to 
+        %code /usr
+        or
+        %code /usr/local
 
 %section#get-involved
   .container
@@ -89,7 +103,7 @@ description: PipeWire — Zero latency multimedia
           or 
           %em #pipewire
           IRC channel on Freenode. Code can be found on
-          =link_to "Github", "https://github.com/pipewire"
+          =link_to "Github", "https://github.com/wtay/pipewire"
           (along with a 
           = succeed ")" do
             = link_to "wiki", "https://wiki.gnome.org/Projects/pipewire"
