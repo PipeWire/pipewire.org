@@ -1,6 +1,6 @@
 ---
 title: PipeWire
-description: PipeWire — low latency multimedia
+description: PipeWire — Multimedia processing
 ---
 %header
   .header-content
@@ -39,7 +39,7 @@ description: PipeWire — low latency multimedia
       %h1
         = current_page.data.description
       %hr
-        %p Sandboxed, non-locking, low latency audio & video access and processing.
+        %p PipeWire makes it possible to share multimedia processing pipelines between applications.
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
   =partial "pcb.svg"
         
@@ -50,7 +50,13 @@ description: PipeWire — low latency multimedia
         =partial "workflow.svg"
 
         %p.text-faded 
-          With PipeWire you can capture and play back audio &amp; video with minimal latency, process in realtime using multi-process architecture. Support for sandboxed application model of the future. See 
+          Capture and playback of audio and video with minimal latency
+        %p.text-faded 
+          Real-time Multimedia processing on audio and video
+        %p.text-faded 
+          Multiprocess architecture to let applications share multimedia content
+        %p.text-faded 
+          Support Sandboxed applications. See 
           = link_to "Flatpak", "http://flatpak.org" 
           for more info.
         %p &nbsp;
@@ -64,12 +70,12 @@ description: PipeWire — low latency multimedia
         %p
           Pipewire is available on 
           = succeed "." do
-            = link_to "github", "https://github.com/wtay/pipewire"
+            = link_to "github", "https://github.com/PipeWire/pipewire"
           To clone the repository, just
 
         :preserve
           <pre>
-            <span class="unselectable">$ </span>git clone https://github.com/wtay/pipewire.git
+            <span class="unselectable">$ </span>git clone https://github.com/PipeWire/pipewire.git
           </pre>
 
         %h2 Setup
@@ -91,6 +97,17 @@ description: PipeWire — low latency multimedia
         or
         %code /usr/local
 
+%section#documentation
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h1.section-heading.text-center Documentation
+        %hr.primary
+        %p
+          =link_to "PipeWire wiki", "https://github.com/PipeWire/pipewire/wiki"
+        %p
+          =link_to "PipeWire API", "https://pipewire.github.io/pipewire/build/doc/html/index.html"
+
 %section#get-involved
   .container
     .row
@@ -103,10 +120,10 @@ description: PipeWire — low latency multimedia
           or 
           %em #pipewire
           IRC channel on Freenode. Code can be found on
-          =link_to "Github", "https://github.com/wtay/pipewire"
+          =link_to "Github", "https://github.com/PipeWire/pipewire"
           (along with a 
           = succeed ")" do
             = link_to "wiki", "https://wiki.gnome.org/Projects/pipewire"
           and issues are tracked on 
           = succeed "." do
-            = link_to "Github Issues", "https://github.com/pipewire/fc-admin/issues"
+            = link_to "Github Issues", "https://github.com/PipeWire/pipewire/issues"
