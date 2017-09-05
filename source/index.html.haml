@@ -39,7 +39,8 @@ description: PipeWire — Multimedia processing
       %h1
         = current_page.data.description
       %hr
-        %p PipeWire makes it possible to share multimedia processing pipelines between applications.
+        %p PipeWire is a project that aims to greatly improve handling of audio and video under Linux. It aims to support the usecases currently handled by both PulseAudio and Jack and at the same time provide same level of powerful handling of Video input and output. It also introduces a security model that makes interacting with audio and video devices from containerized applications easy, with supporting Flatpak applications being the primary goal. Alongside Wayland and Flatpak we expect Pipewire to provide a core building block for the future of Linux application development.
+
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
   =partial "pcb.svg"
         
@@ -50,6 +51,8 @@ description: PipeWire — Multimedia processing
         =partial "workflow.svg"
 
         %p.text-faded 
+          Features include:
+	%p.text-faded
           Capture and playback of audio and video with minimal latency
         %p.text-faded 
           Real-time Multimedia processing on audio and video
@@ -68,7 +71,9 @@ description: PipeWire — Multimedia processing
         %h1.section-heading.text-center Getting PipeWire
         %hr.primary
         %p
-          Pipewire is available on 
+          Pipewire should be available in most distributions soon, but for now you can either get the sourcecode from github or install the packages we made for Fedora 27 and Fedora Rawhide.
+	%p
+          If you want to get the code from github then the latest Pipewire sourcecode is available at 
           = succeed "." do
             = link_to "github", "https://github.com/PipeWire/pipewire"
           To clone the repository, just
@@ -118,7 +123,10 @@ description: PipeWire — Multimedia processing
         %h1.section-heading.text-center Get Involved
         %hr.primary
         %p
-          PipeWire is Free Software and is developed in the open.
+          PipeWire is Free Software and is developed in the open. It was created by 
+          Wim Taymans, Principal Engineer at Red Hat and co-creator of the GStreamer 
+          multimedia framework.
+
           Code can be found on
           =link_to "Github", "https://github.com/PipeWire/pipewire"
         %p
