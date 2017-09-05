@@ -52,12 +52,14 @@ description: PipeWire — Multimedia processing
 
         %p.text-faded 
           Features include:
-	%p.text-faded
+        %p.text-faded
           Capture and playback of audio and video with minimal latency
         %p.text-faded 
           Real-time Multimedia processing on audio and video
-        %p.text-faded 
+        %p.text-faded
           Multiprocess architecture to let applications share multimedia content
+        %p.text-faded
+          Provides GStreamer plugins for easy use and integration in current applications
         %p.text-faded 
           Support Sandboxed applications. See 
           = link_to "Flatpak", "http://flatpak.org" 
@@ -72,8 +74,8 @@ description: PipeWire — Multimedia processing
         %hr.primary
         %p
           Pipewire should be available in most distributions soon, but for now you can either get the sourcecode from github or install the packages we made for Fedora 27 and Fedora Rawhide.
-	%p
-          If you want to get the code from github then the latest Pipewire sourcecode is available at 
+        %p
+          If you want to get the code from github then the latest Pipewire sourcecode is available at
           = succeed "." do
             = link_to "github", "https://github.com/PipeWire/pipewire"
           To clone the repository, just
@@ -85,8 +87,7 @@ description: PipeWire — Multimedia processing
 
         %h2 Setup
         %p
-          Building pipewire is fairly straightforward.
-        
+          Pipewire is using the Meson build system and building pipewire is fairly straightforward.
         
         :preserve
           <pre>
