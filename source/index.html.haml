@@ -103,6 +103,29 @@ description: PipeWire — Multimedia processing
         or
         %code /usr/local
 
+        %h2 Running
+        %p
+          You can test the pipewire server from the source directory with
+
+        :preserve
+          <pre>
+            <span class="unselectable">$ </span>make run
+          </pre>
+
+        %p
+          To test video capture and display with SDL from the source directory, try:
+
+        :preserve
+          <pre>
+            <span class="unselectable">$ </span>SPA_PLUGIN_DIR=build/spa/plugins PIPEWIRE_MODULE_DIR=build  build/src/examples/export-sink
+          </pre>
+
+        %p
+          You can play around with the other examples as well. Don't forget to set the correct
+          environment variables as shown above or else the plugins and modules won't be found.
+
+
+
 %section#documentation
   .container
     .row
