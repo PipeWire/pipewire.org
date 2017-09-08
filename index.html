@@ -532,6 +532,19 @@ is commonly set to
 <code>/usr</code>
 or
 <code>/usr/local</code>
+<h2>Running</h2>
+<p>
+You can test the pipewire server from the source directory with
+</p>
+<pre>&#x000A;  <span class="unselectable">$ </span>make run&#x000A;</pre>&#x000A;
+<p>
+To test video capture and display with SDL from the source directory, try:
+</p>
+<pre>&#x000A;  <span class="unselectable">$ </span>SPA_PLUGIN_DIR=build/spa/plugins PIPEWIRE_MODULE_DIR=build  build/src/examples/export-sink&#x000A;</pre>&#x000A;
+<p>
+You can play around with the other examples as well. Don't forget to set the correct
+environment variables as shown above or else the plugins and modules won't be found.
+</p>
 </div>
 </div>
 </div>
