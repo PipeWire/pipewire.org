@@ -39,7 +39,7 @@ description: PipeWire — Multimedia processing
       %h1
         = current_page.data.description
       %hr
-        %p PipeWire is a project that aims to greatly improve handling of audio and video under Linux. It aims to support the usecases currently handled by both PulseAudio and Jack and at the same time provide same level of powerful handling of Video input and output. It also introduces a security model that makes interacting with audio and video devices from containerized applications easy, with supporting Flatpak applications being the primary goal. Alongside Wayland and Flatpak we expect Pipewire to provide a core building block for the future of Linux application development.
+        %p PipeWire is a project that aims to greatly improve handling of audio and video under Linux. It aims to support the usecases currently handled by both PulseAudio and Jack and at the same time provide same level of powerful handling of Video input and output. It also introduces a security model that makes interacting with audio and video devices from containerized applications easy, with supporting Flatpak applications being the primary goal. Alongside Wayland and Flatpak we expect PipeWire to provide a core building block for the future of Linux application development.
 
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
   =partial "pcb.svg"
@@ -53,15 +53,15 @@ description: PipeWire — Multimedia processing
         %p.text-faded 
           Features include:
         %p.text-faded
-          Capture and playback of audio and video with minimal latency
+          Capture and playback of audio and video with minimal latency.
         %p.text-faded 
-          Real-time Multimedia processing on audio and video
+          Real-time Multimedia processing on audio and video.
         %p.text-faded
-          Multiprocess architecture to let applications share multimedia content
+          Multiprocess architecture to let applications share multimedia content.
         %p.text-faded
-          Provides GStreamer plugins for easy use and integration in current applications
+          GStreamer plugins for easy use and integration in current applications.
         %p.text-faded 
-          Support Sandboxed applications. See 
+          Sandboxed applications support. See 
           = link_to "Flatpak", "http://flatpak.org" 
           for more info.
         %p &nbsp;
@@ -73,12 +73,12 @@ description: PipeWire — Multimedia processing
         %h1.section-heading.text-center Getting PipeWire
         %hr.primary
         %p
-          Pipewire should be available in most distributions soon, but for now you can either get the sourcecode from github or install the packages we made for Fedora 27 and Fedora Rawhide.
+          PipeWire should be available in most distributions soon, but for now you can either get the source code from GitHub or install the packages we made for Fedora 27 and Fedora Rawhide.
         %p
-          If you want to get the code from github then the latest Pipewire sourcecode is available at 
+          If you want to get the code from GitHub then the latest PipeWire source code is available at 
           = succeed "." do
-            = link_to "github", "https://github.com/PipeWire/pipewire"
-          To clone the repository, just
+            = link_to "GitHub", "https://github.com/PipeWire/pipewire"
+          To clone the repository, just:
 
         :preserve
           <pre>
@@ -87,7 +87,7 @@ description: PipeWire — Multimedia processing
 
         %h2 Setup
         %p
-          Pipewire is using the Meson build system and building pipewire is fairly straightforward.
+          PipeWire is using the Meson build system and building PipeWire is fairly straightforward:
         
         :preserve
           <pre>
@@ -101,11 +101,12 @@ description: PipeWire — Multimedia processing
         is commonly set to 
         %code /usr
         or
-        %code /usr/local
+        = succeed "." do
+          %code /usr/local
 
         %h2 Running
         %p
-          You can test the pipewire server from the source directory with
+          You can test the PipeWire server from the source directory with:
 
         :preserve
           <pre>
@@ -134,7 +135,8 @@ description: PipeWire — Multimedia processing
         %hr.primary
         %p
           A collection of useful pages can be found on the 
-          =link_to "PipeWire wiki", "https://github.com/PipeWire/pipewire/wiki"
+          = succeed "." do
+            =link_to "PipeWire wiki", "https://github.com/PipeWire/pipewire/wiki"
         %p
           Developers can check out the 
           =link_to "PipeWire API", "https://pipewire.github.io/pipewire/"
@@ -151,14 +153,16 @@ description: PipeWire — Multimedia processing
           Wim Taymans, Principal Engineer at Red Hat and co-creator of the GStreamer 
           multimedia framework.
 
-          Code can be found on
-          =link_to "Github", "https://github.com/PipeWire/pipewire"
+          Code can be found on 
+          = succeed "." do
+            =link_to "GitHub", "https://github.com/PipeWire/pipewire"
         %p
           Join us on IRC at
           %em #pipewire
           on 
-          =link_to "Freenode", "https://freenode.net/"
-        %p
-          issues are tracked on 
           = succeed "." do
-            = link_to "Github Issues", "https://github.com/PipeWire/pipewire/issues"
+            =link_to "Freenode", "https://freenode.net/"
+        %p
+          Issues are tracked on 
+          = succeed "." do
+            = link_to "GitHub Issues", "https://github.com/PipeWire/pipewire/issues"
