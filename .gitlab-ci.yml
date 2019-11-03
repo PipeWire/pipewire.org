@@ -14,6 +14,8 @@ build:
   artifacts:
     paths:
     - build
+  except:
+  - master
 
 pages:
   stage: deploy
