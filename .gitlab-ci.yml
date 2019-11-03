@@ -1,0 +1,26 @@
+image: ruby:2.6
+
+cache:
+  paths:
+  - _bundle/
+
+before_script:
+  - bundle install --path _bundle
+
+build:
+  stage: build
+  script:
+  - bundle exec middleman build
+  artifacts:
+    paths:
+    - build
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec middleman build
+  artifacts:
+    paths:
+    - build
+  only:
+  - master
