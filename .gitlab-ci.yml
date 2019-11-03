@@ -20,9 +20,9 @@ build:
 pages:
   stage: deploy
   script:
-  - bundle exec middleman build
+  - bundle exec middleman build --build-dir=public
   artifacts:
     paths:
-    - build
+    - public
   only:
   - master
