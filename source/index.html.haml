@@ -39,7 +39,13 @@ description: PipeWire — Multimedia processing
       %h1
         = current_page.data.description
       %hr
-        %p PipeWire is a project that aims to greatly improve handling of audio and video under Linux. It aims to support the usecases currently handled by both PulseAudio and Jack and at the same time provide same level of powerful handling of Video input and output. It also introduces a security model that makes interacting with audio and video devices from containerized applications easy, with supporting Flatpak applications being the primary goal. Alongside Wayland and Flatpak we expect PipeWire to provide a core building block for the future of Linux application development.
+        %p PipeWire is a project that aims to greatly improve handling of audio and video under Linux.
+        It provides a low-latency, graph based processing engine on top of audio and video devices
+        that can be used to support the use cases currently handled by both pulseaudio and JACK.
+        PipeWire was designed with a powerful security model that makes interacting with audio and
+        video devices from containerized applications easy, with supporting Flatpak applications
+        being the primary goal. Alongside Wayland and Flatpak we expect PipeWire to provide a core
+        building block for the future of Linux application development.
 
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
   =partial "pcb.svg"
@@ -59,7 +65,7 @@ description: PipeWire — Multimedia processing
         %p.text-faded
           Multiprocess architecture to let applications share multimedia content.
         %p.text-faded
-          GStreamer plugins for easy use and integration in current applications.
+          Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
         %p.text-faded
           Sandboxed applications support. See
           = link_to "Flatpak", "http://flatpak.org"
@@ -73,9 +79,11 @@ description: PipeWire — Multimedia processing
         %h1.section-heading.text-center Getting PipeWire
         %hr.primary
         %p
-          PipeWire should be available in most distributions soon, but for now you can either get the source code from GitHub or install the packages we made for Fedora 27 and Fedora Rawhide.
+          An older version of PipeWire (0.2) that does not support the audio use cases
+          should be available in most distributions.
         %p
-          If you want to get the code from GitHub then the latest PipeWire source code is available at
+          If you want to get the code from GitLab then the latest PipeWire source code is
+          available at
           = succeed "." do
             = link_to "GitHub", "https://gitlab.freedesktop.org/pipewire/pipewire"
           To clone the repository, just:
@@ -87,7 +95,8 @@ description: PipeWire — Multimedia processing
 
         %h2 Setup
         %p
-          PipeWire is using the Meson build system and building PipeWire is fairly straightforward:
+          PipeWire is using the Meson build system and we provide a convenience script
+          and Makefile that makes building PipeWire fairly straightforward:
 
         :preserve
           <pre>
@@ -114,11 +123,21 @@ description: PipeWire — Multimedia processing
           </pre>
 
         %p
-          To test video capture and display with SDL from the source directory, try:
+          To test video capture and display with SDL from the source directory, try
+          in another window:
 
         :preserve
           <pre>
-            <span class="unselectable">$ </span>SPA_PLUGIN_DIR=build/spa/plugins PIPEWIRE_MODULE_DIR=build  build/src/examples/export-sink
+            <span class="unselectable">$ </span>make shell
+          </pre>
+
+        %p
+          This sets up the environment variables to run the example apps from the
+          build directory like this:
+
+        :preserve
+          <pre>
+            <span class="unselectable">$ </span>build/src/examples/video-play
           </pre>
 
         %p
@@ -155,7 +174,7 @@ description: PipeWire — Multimedia processing
 
           Code can be found on
           = succeed "." do
-            =link_to "GitHub", "https://gitlab.freedesktop.org/pipewire/pipewire"
+            =link_to "GitLab", "https://gitlab.freedesktop.org/pipewire/pipewire"
         %p
           Join us on IRC at
           %em #pipewire
@@ -165,4 +184,4 @@ description: PipeWire — Multimedia processing
         %p
           Issues are tracked on
           = succeed "." do
-            = link_to "GitHub Issues", "https://gitlab.freedesktop.org/pipewire/pipewire/issues"
+            = link_to "GitLab Issues", "https://gitlab.freedesktop.org/pipewire/pipewire/issues"
