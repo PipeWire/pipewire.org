@@ -158,7 +158,13 @@ PipeWire
 PipeWire — Multimedia processing
 </h1>
 <hr>
-<p>PipeWire is a project that aims to greatly improve handling of audio and video under Linux. It aims to support the usecases currently handled by both PulseAudio and Jack and at the same time provide same level of powerful handling of Video input and output. It also introduces a security model that makes interacting with audio and video devices from containerized applications easy, with supporting Flatpak applications being the primary goal. Alongside Wayland and Flatpak we expect PipeWire to provide a core building block for the future of Linux application development.</p>
+<p>PipeWire is a project that aims to greatly improve handling of audio and video under Linux.</p>
+It provides a low-latency, graph based processing engine on top of audio and video devices
+that can be used to support the use cases currently handled by both pulseaudio and JACK.
+PipeWire was designed with a powerful security model that makes interacting with audio and
+video devices from containerized applications easy, with supporting Flatpak applications
+being the primary goal. Alongside Wayland and Flatpak we expect PipeWire to provide a core
+building block for the future of Linux application development.
 <a class='btn btn-primary btn-xl page-scroll' href='#about'>Find Out More</a>
 </hr>
 </div>
@@ -494,7 +500,7 @@ Real-time Multimedia processing on audio and video.
 Multiprocess architecture to let applications share multimedia content.
 </p>
 <p class='text-faded'>
-GStreamer plugins for easy use and integration in current applications.
+Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
 </p>
 <p class='text-faded'>
 Sandboxed applications support. See
@@ -513,17 +519,20 @@ for more info.
 <h1 class='section-heading text-center'>Getting PipeWire</h1>
 <hr class='primary'>
 <p>
-PipeWire should be available in most distributions soon, but for now you can either get the source code from GitHub or install the packages we made for Fedora 27 and Fedora Rawhide.
+An older version of PipeWire (0.2) that does not support the audio use cases
+should be available in most distributions.
 </p>
 <p>
-If you want to get the code from GitHub then the latest PipeWire source code is available at
+If you want to get the code from GitLab then the latest PipeWire source code is
+available at
 <a href="https://gitlab.freedesktop.org/pipewire/pipewire">GitHub</a>.
 To clone the repository, just:
 </p>
 <pre>&#x000A;  <span class="unselectable">$ </span>git clone https://gitlab.freedesktop.org/pipewire/pipewire.git&#x000A;</pre>&#x000A;
 <h2>Setup</h2>
 <p>
-PipeWire is using the Meson build system and building PipeWire is fairly straightforward:
+PipeWire is using the Meson build system and we provide a convenience script
+and Makefile that makes building PipeWire fairly straightforward:
 </p>
 <pre>&#x000A;  <span class="unselectable">$ </span>./autogen.sh --prefix=$PREFIX&#x000A;  <span class="unselectable">$ </span>make&#x000A;  <span class="unselectable">$ </span>make install&#x000A;</pre>&#x000A;
 The
@@ -538,9 +547,15 @@ You can test the PipeWire server from the source directory with:
 </p>
 <pre>&#x000A;  <span class="unselectable">$ </span>make run&#x000A;</pre>&#x000A;
 <p>
-To test video capture and display with SDL from the source directory, try:
+To test video capture and display with SDL from the source directory, try
+in another window:
 </p>
-<pre>&#x000A;  <span class="unselectable">$ </span>SPA_PLUGIN_DIR=build/spa/plugins PIPEWIRE_MODULE_DIR=build  build/src/examples/video-play&#x000A;</pre>&#x000A;
+<pre>&#x000A;  <span class="unselectable">$ </span>make shell&#x000A;</pre>&#x000A;
+<p>
+This sets up the environment variables to run the example apps from the
+build directory like this:
+</p>
+<pre>&#x000A;  <span class="unselectable">$ </span>build/src/examples/video-play&#x000A;</pre>&#x000A;
 <p>
 You can play around with the other examples as well. Don't forget to set the correct
 environment variables as shown above or else the plugins and modules won't be found.
@@ -579,7 +594,7 @@ PipeWire is Free Software and is developed in the open. It was created by
 Wim Taymans, Principal Engineer at Red Hat and co-creator of the GStreamer
 multimedia framework.
 Code can be found on
-<a href="https://gitlab.freedesktop.org/pipewire/pipewire">GitHub</a>.
+<a href="https://gitlab.freedesktop.org/pipewire/pipewire">GitLab</a>.
 </p>
 <p>
 Join us on IRC at
@@ -589,7 +604,7 @@ on
 </p>
 <p>
 Issues are tracked on
-<a href="https://gitlab.freedesktop.org/pipewire/pipewire/issues">GitHub Issues</a>.
+<a href="https://gitlab.freedesktop.org/pipewire/pipewire/issues">GitLab Issues</a>.
 </p>
 </div>
 </div>
