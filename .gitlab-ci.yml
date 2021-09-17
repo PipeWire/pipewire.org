@@ -10,19 +10,19 @@ before_script:
 build:
   stage: build
   script:
-  - bundle exec middleman build
+  - bundle exec jekyll b
   artifacts:
     paths:
-    - build
+    - _site
   except:
   - master
 
 pages:
   stage: deploy
   script:
-  - bundle exec middleman build --build-dir=public
+  - bundle exec jekyll s
   artifacts:
     paths:
-    - public
+    - _site
   only:
   - master
