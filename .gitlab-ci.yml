@@ -5,24 +5,27 @@ cache:
   - _bundle/
 
 before_script:
+  - gem install bundler
   - bundle install --path _bundle
 
 build:
   stage: build
   script:
   - bundle exec jekyll b
+  - mv _site public
   artifacts:
     paths:
-    - _site
+    - public
   except:
   - master
 
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll s
+  - bundle exec jekyll b
+  - mv _site public
   artifacts:
     paths:
-    - _site
+    - public
   only:
   - master
