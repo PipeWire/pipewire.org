@@ -12,7 +12,7 @@ layout: default
 - Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
 - Sandboxed applications support. See Flatpak for more info. 
 
-# Getting PipeWire
+## Getting PipeWire
 
 PipeWire (0.3) with support for audio use cases should be available in most distributions. Most distributions however will not have enabled the audio parts by default but you can [read here](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/README.md) how to run some examples.
 
@@ -23,7 +23,7 @@ If you want to get the code from GitLab then the latest PipeWire source code is 
 git clone https://gitlab.freedesktop.org/pipewire/pipewire.git
 ```
 
-## Setup
+### Setup
 
 PipeWire is using the Meson build system and we provide a convenience script and Makefile that makes building PipeWire fairly straightforward: 
 
@@ -35,7 +35,7 @@ make install
 
 The `$PREFIX` is commonly set to `/usr` or `/usr/local`.
 
-## Running
+### Running
 
 You can test the PipeWire server from the source directory with:
 
@@ -57,7 +57,7 @@ build/src/examples/video-play
 
 You can play around with the other examples as well. Don't forget to set the correct environment variables as shown above or else the plugins and modules won't be found.
 
-# Documentation
+## Documentation
 
 Pipewire is [documented here](https://docs.pipewire.org/).
 
@@ -65,7 +65,7 @@ Developers can also check out the (incomplete) [PipeWire API documentation](http
 
 A collection of other useful pages can be found on the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/home).
 
-# Get Involved
+## Get Involved
 
 PipeWire is Free Software and is developed in the open. It was created by Wim Taymans, Principal Engineer at Red Hat and co-creator of the GStreamer multimedia framework. Code can be found on [GitLab](https://gitlab.freedesktop.org/pipewire/pipewire).
 
