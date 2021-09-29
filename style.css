@@ -102,6 +102,21 @@ h2 {
   margin-top: 3rem;
   font-size: 1.2rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+
+  html {
+    background-color: var(--dark5);
+  }
+
+  img, video, iframe {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+}
+
 a {
   font-weight: 600;
   text-decoration: none;
