@@ -80,7 +80,7 @@ body {
   background-color: #f6f5f4;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 1rem 0 10px;
+  margin: 2rem 0 -6px;
   font-weight: 600;
   line-height: 1.25;
   font-variation-settings: "wght" 600; /* needed for webkit */
