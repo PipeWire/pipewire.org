@@ -169,6 +169,18 @@ img {
   margin: 0 auto;
 }
 
+  @media (prefers-color-scheme: dark) {
+    a.page-logo {
+      filter: invert(100%) hue-rotate(180deg);
+      display: block;
+      width: 130px; height: 26px;
+      background: url('assets/page-logo-i.svg') no-repeat center;
+      margin: auto;
+    }
+    a.page-logo > img { display: none; }
+    
+  }
+
 .brand-white {
   background-color: #fff;
 }
