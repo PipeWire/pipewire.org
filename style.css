@@ -160,25 +160,23 @@ img {
 }
 
 /* Singletons */
-.page-logo {
+#logo {
   display: block;
+  width: 130px; height: 26px;
+  color: rgba(0,0,0,0); /* make text transparent */
+  background: url('assets/page-logo.svg') no-repeat center;
   padding: 5rem 0 3rem;
+  margin: 0 auto;
 }
 .page-logo > img {
-  display: block;
   margin: 0 auto;
 }
 
   @media (prefers-color-scheme: dark) {
     a.page-logo {
-      filter: invert(100%) hue-rotate(180deg);
-      display: block;
-      width: 130px; height: 26px;
-      background: url('assets/page-logo-i.svg') no-repeat center;
-      margin: auto;
+      filter: invert(100%) hue-rotate(180deg); /* uninvert */
+      background-image: url('assets/page-logo-i.svg');
     }
-    a.page-logo > img { display: none; }
-    
   }
 
 .brand-white {
