@@ -2,6 +2,8 @@
 title: pipewire
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://pipewire.org" # the base hostname & protocol for your site
+sourceurl: "https://gitlab.freedesktop.org/pipewire/pipewire-org"
+description: "Pipewire: Audio and Video on Linux"
 
 permalink: /:title/
 

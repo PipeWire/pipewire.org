@@ -1,7 +1,14 @@
-/* shamelessy steal systemd concept and stylesheet 
-   https://github.com/systemd/systemd/tree/main/docs
+/* 
+
+    PipeWire Website
+    ====================
+    
+    shamelessy stolen CSS from systemd 
+    https://github.com/systemd/systemd/tree/main/docs
+    
 */
 
+/* GNOME Color Palette */
 :root {
   --rounded-corner: 12px;
   --blue1: rgb(153,193,241);
@@ -49,9 +56,11 @@
   --dark3: rgb(61,56,70);
   --dark4: rgb(36,31,49);
   --dark5: rgb(0,0,0);
-  --primary-color: var(--blue5);
+  --primary-color: var(--blue5); /* Set your project color */
   --borders: var(--light3);
 }
+
+/* Typography */
 
 @font-face {
   font-family: 'Inter Var';
@@ -61,7 +70,6 @@
   src: url("fonts/Inter.var.woff2?v=3.19") format("woff2");
 }
 
-/* Typography */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -99,7 +107,6 @@ h1 {
   }
 }
 h2 {
-  margin-top: 3rem;
   font-size: 1.2rem;
 }
 
