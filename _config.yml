@@ -5,6 +5,7 @@ url: "https://pipewire.org" # the base hostname & protocol for your site
 sourceurl: "https://gitlab.freedesktop.org/pipewire/pipewire-org"
 description: "Pipewire: Audio and Video on Linux"
 issuesurl: "https://gitlab.freedesktop.org/pipewire/pipewire-org/-/issues" #link to file 404 bugs
+trademarkurl: "https://uspto.report/TM/90803539"
 
 permalink: /:title/
 
