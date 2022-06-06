@@ -4,21 +4,21 @@ layout: default
 ![PipeWire](assets/pipewire.gif){:.full.pixels}
 
 
-[PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) is a project that aims to greatly improve handling of audio and video under Linux. It provides a low-latency, graph based processing engine on top of audio and video devices that can be used to support the use cases currently handled by both pulseaudio and JACK. PipeWire was designed with a powerful security model that makes interacting with audio and video devices from containerized applications easy, with supporting Flatpak applications being the primary goal. Alongside Wayland and Flatpak we expect PipeWire to provide a core building block for the future of Linux application development.
+[PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) is a project that aims to greatly improve handling of audio and video under Linux. It provides a low-latency, graph-based processing engine on top of audio and video devices that can be used to support the use cases currently handled by both PulseAudio and JACK. PipeWire was designed with a powerful security model that makes interacting with audio and video devices from containerized applications easy, with support for Flatpak applications being the primary goal. Alongside Wayland and Flatpak, we expect PipeWire to provide a core building block for the future of Linux application development.
 
 
 
 - Capture and playback of audio and video with minimal latency.
-- Real-time Multimedia processing on audio and video.
+- Real-time multimedia processing on audio and video.
 - Multiprocess architecture to let applications share multimedia content.
-- Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
+- Seamless support for PulseAudio, JACK, ALSA, and GStreamer applications.
 - Sandboxed applications support. See Flatpak for more info. 
 
 ## Getting PipeWire
 
 PipeWire (0.3) with support for audio use cases should be available in most distributions. Most distributions however will not have enabled the audio parts by default but you can [read here](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/README.md) how to run some examples.
 
-If you want to get the code from GitLab then the latest PipeWire source code is available at GitLab. To clone the repository, just:
+If you want to get the code from GitLab, then the latest PipeWire source code is available at GitLab. To clone the repository, just:
 
   
 ```
@@ -27,7 +27,7 @@ git clone https://gitlab.freedesktop.org/pipewire/pipewire.git
 
 ### Setup
 
-PipeWire is using the Meson build system and we provide a convenience script and Makefile that makes building PipeWire fairly straightforward: 
+PipeWire is using the Meson build system and we provide a convenience script and makefile that makes building PipeWire fairly straightforward: 
 
 ```
 ./autogen.sh --prefix=$PREFIX
@@ -45,7 +45,7 @@ You can test the PipeWire server from the source directory with:
 make run
 ```
 
-To test video capture and display with SDL from the source directory, try in another window:
+To test video capture and display with SDL from the source directory, try this in another window:
 
 ```
 make shell
@@ -61,7 +61,7 @@ You can play around with the other examples as well. Don't forget to set the cor
 
 ## Documentation
 
-Pipewire is [documented here](https://docs.pipewire.org/).
+PipeWire is [documented here](https://docs.pipewire.org/).
 
 Developers can also check out the (incomplete) [PipeWire API documentation](https://docs.pipewire.org/page_api.html).
 
