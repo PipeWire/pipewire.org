@@ -75,7 +75,6 @@ PipeWire is Free Software and is developed in the open. It was created by Wim Ta
 - Issues are tracked on [GitLab Issues](https://gitlab.freedesktop.org/pipewire/pipewire/issues).
 - We adhere to the Contributor Covenant for our [Code of Conduct](https://gitlab.freedesktop.org/pipewire/pipewire/blob/master/CODE_OF_CONDUCT.md).
 - Follow us on [Mastodon](https://fosstodon.org/web/@pipewire).
-- Follow us on [Twitter](https://twitter.com/PipewireP).
 
 <script src="https://liberapay.com/PipeWire/widgets/button.js"></script>
 <noscript><a href="https://liberapay.com/PipeWire/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
