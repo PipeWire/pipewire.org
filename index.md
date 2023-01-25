@@ -35,7 +35,7 @@ make
 make install
 ```
 
-The `$PREFIX` is commonly set to `/usr` or `/usr/local`.
+While we recommend not installing such builds at all, the only `$PREFIX` that works out fo the box is `/usr` . Instead consider building custom distro packages or run from the build directory without installing.
 
 ### Running
 
