@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-![PipeWire](assets/pipewire.gif){:.full.pixels}
+![A retro GIF of a male connector PCB with a miniature piano keyboard and cassette tape player connected. The PipeWire logo (the letters P and W) is drawn on as traces and solder dots. A little person with a speaker for a head is also standing on a dedicated area.](assets/pipewire.gif){:.full.pixels}
 
 
 [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) is a project that aims to greatly improve handling of audio and video under Linux. It provides a low-latency, graph-based processing engine on top of audio and video devices that can be used to support the use cases currently handled by both PulseAudio and JACK. PipeWire was designed with a powerful security model that makes interacting with audio and video devices from containerized applications easy, with support for Flatpak applications being the primary goal. Alongside Wayland and Flatpak, we expect PipeWire to provide a core building block for the future of Linux application development.
