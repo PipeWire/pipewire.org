@@ -86,11 +86,9 @@ html, body {
 body {
   color: #241f31;
   background-color: #f6f5f4;
-  /* ⇩⇩ put footer at the bottom for short pages, such as the 404 ⇩⇩ */
-  display: grid;
   min-height: 100vh;
-  grid-template-rows: auto minmax(auto,1fr) auto; /* header, stuff, footer */
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 2rem 0 -6px;
   font-weight: 600;
