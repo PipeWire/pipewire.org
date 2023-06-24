@@ -71,7 +71,7 @@ A collection of other useful pages can be found on the [PipeWire wiki](https://g
 
 PipeWire is Free Software and is developed in the open. It was created by Wim Taymans, Principal Engineer at Red Hat and co-creator of the GStreamer multimedia framework. Code can be found on [GitLab](https://gitlab.freedesktop.org/pipewire/pipewire).
 
-- Join us on IRC at *#pipewire* on [OFTC](https://www.oftc.net/).
+- Join us on IRC at *#pipewire* on [OFTC](https://www.oftc.net/), or on Matrix at [#pipewire:matrix.org](https://matrix.to/#/#pipewire:matrix.org).
 - Issues are tracked on [GitLab Issues](https://gitlab.freedesktop.org/pipewire/pipewire/issues).
 - We adhere to the Contributor Covenant for our [Code of Conduct](https://gitlab.freedesktop.org/pipewire/pipewire/blob/master/CODE_OF_CONDUCT.md).
 - Follow us on [Mastodon](https://fosstodon.org/web/@pipewire).
