@@ -54,7 +54,7 @@ make shell
 This sets up the environment variables to run the example apps from the build directory like this:
 
 ```
-build/src/examples/video-play
+builddir/src/examples/video-play
 ```
 
 You can play around with the other examples as well. Don't forget to set the correct environment variables as shown above or else the plugins and modules won't be found.
