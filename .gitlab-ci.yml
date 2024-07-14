@@ -1,12 +1,12 @@
-image: ruby:2.6
+image: ruby:3.3
 
 cache:
   paths:
   - _bundle/
 
 before_script:
-  - gem install bundler
-  - bundle install --path _bundle
+  - bundle config path _bundle
+  - bundle install
 
 build:
   stage: build
