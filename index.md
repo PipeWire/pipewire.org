@@ -16,7 +16,7 @@ layout: default
 
 ## Getting PipeWire
 
-PipeWire (0.3) with support for audio use cases should be available in most distributions. Most distributions however will not have enabled the audio parts by default but you can [read here](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/README.md) how to run some examples.
+PipeWire with support for audio use cases should be available in most distributions. Most distributions however will not have enabled the audio parts by default but you can [read here](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/README.md) how to run some examples.
 
 If you want to get the code from GitLab, then the latest PipeWire source code is available at GitLab. To clone the repository, just:
 
